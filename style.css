@@ -256,3 +256,74 @@ footer p {
 footer p:hover {
     color: var(--primary);
 }
+
+
+
+
+
+
+
+
+/* Certifications & Achievements Sections */
+#certifications,
+#achievements {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+#certifications h2,
+#achievements h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: var(--text-main);
+}
+
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.cert-card h3 {
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.cert-card p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.cert-card:hover {
+    border-color: var(--primary);
+    background: rgba(26, 26, 26, 0.9);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.cert-card:hover h3 {
+    color: var(--primary-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cert-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
